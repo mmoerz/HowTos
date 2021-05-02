@@ -3,7 +3,8 @@
 
 ## Hidden Loaf of Evil
 
-If tables utilize other string types than nvarchar, not using DbString will
+If the database tables utilize other string types than nvarchar,
+not using DbString will
 lead to a massiv performance penalty.
 
 So to counter this problem you must use DbString.
@@ -17,6 +18,16 @@ employee = db.QueryFirst<Employee>(
 ```
 Read the [article](https://jithilmt.medium.com/sql-server-hidden-load-evil-performance-issue-with-dapper-465a08f922f6)
 for more information about the problem.
+
+## Common Design Patterns for Dapper
+### Repository
+
+### Unit of Work
+
+### Separation of Duty
+
+## Class library
+
 
 ## Resources
 https://www.learndapper.com/

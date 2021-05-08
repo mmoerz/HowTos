@@ -4,11 +4,11 @@
 
 Creating a C# Template project
 As a New Project - Search for Extensions
-C# Item Template (*hints* ther is c# project template)
+C# Item Template (*hints* there is c# project template)
 
 Exporting an Itemtemplate using:
 
-Menu - Project - Export Template...
+In the mainmenu: Project > Export Template...
 
 - select the project where the source for the template is stored
 - select the item to export
@@ -46,4 +46,37 @@ $rootnamespace$ | name of the root namespace (project) where the item is added.
 safe prefix for all exists, meaning the in the safe prefixed variable the
 contents are escaped for safe use = spaces get replaced by "_".
 
+## Export Project Template
+
+In the mainmenu: Project > Export Template ...
+
+## Enhancements for .vstemplate
+
+```
+<TemplateData>
+  <Name>Something</Name>
+  <Description>bla bla</Description>
+  <ProjectType>CSharp</ProjectType>
+  <ProjectSubType>
+  </ProjectSubType>
+```
+
+Add right after ProjectSubType:
+
+```
+  <LanguageTag>C#</LanguageTag>
+```
+
+```
+  <PlatformTag>Windows</PlatformTag>
+```
+
+Following Tag can be duplicated for each tag.
+e.g. for one for Desktop, one for TimCo
+```
+  <ProjectTypeTag></ProjectTypeTag>
+```
+
+## VSIX
+The extension way - can be 'installed' to other visual studios.
 

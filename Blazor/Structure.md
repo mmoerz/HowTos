@@ -8,3 +8,17 @@ https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcor
 # encrypted configuration file:
 https://stackoverflow.com/questions/36062670/encrypted-configuration-in-asp-net-cored
 
+
+
+# Structure of a blazor component
+
+- Directives
+
+- RAzor markup
+html + razor markup
+
+- Componente logic
+c#
+
+- Styling by Css
+
